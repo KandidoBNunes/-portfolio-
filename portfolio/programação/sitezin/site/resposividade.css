@@ -1,0 +1,12 @@
+@media only screen and (max-widith:1258px){
+    .menu{
+        display: none;
+    }
+    .navbar{
+        position: relative;
+    }
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario de testes</title>
+</head>
+<body>
+    <section>
+        <h2>formulario</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label for="campo-1">Seu Nome:</label>
+            <input type="text" name="name" placeholder="Digite o seu nome" autocomplete="off" required>
+            <label for="campo-2">Seu CPF:</label>
+            <input type="text" name="$myCustomField2" placeholder="Digite o seu CPF" autocomplete="off" required>
+            <label for="campo-3">onde mora:</label>
+            <input type="text" name="email" placeholder="Digite onde você mora" autocomplete="off" required>
+            <label for="campo-4">Número de contato:</label>
+            <input type="text" name="$myCustomField1" placeholder="Digite seu telefone" autocomplete="off" required>
+            <label for="campo-5">Números de reserva:</label>
+            <input type="text" name="phone" placeholder="Seu numero reserva" autocomplete="off" required>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="accessKey" value="2dd95fc8-be7e-4f96-8854-dde3e0666667">
+            <input type="hidden" name="redirectTo" value="obg,html">
+        </form>
+    </section>
+    </section>
+    <script>
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Tab") {
+                const focusedElement = document.activeElement;
+                const formFields = Array.from(document.querySelectorAll("input[type='text']"));
+                const currentIndex = formFields.indexOf(focusedElement);
+
+                if (currentIndex > -1) {
+                    const nextIndex = (currentIndex + 1) % formFields.length;
+                    formFields[nextIndex].focus();
+                    e.preventDefault();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

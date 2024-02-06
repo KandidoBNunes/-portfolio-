@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+*{
+    box-shadow: border-box;
+}
+body{
+    background-color:rgb(175, 170, 170);
+    margin:0;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color:rgb(213, 213, 221);
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    flex:20%;
+    border: px solid red;
+    text-align:center;
+    margin-left: 10%;
+}
+.logo h1{
+    font-family:'comfortaa';
+    font-size: 50px;
+    color:rgb(47, 5, 77)
+
+}
+.menu{
+    max-width: 1250px;
+    flex:60%;
+    border:px solid green;
+    text-align: right;
+    padding:55px;
+}
+.menu a {
+    text-decoration: none;
+    color:rgb(13, 44, 44);
+    font-size:25px;
+    padding:20px 16px;
+}
+.menu a:hover{
+    color:rgb(47, 4, 78);
+    border-top:4px solid rgb(50, 4, 83);   
+}
+#botao{
+    background-color:rgb(227, 111, 250);
+    padding:10px 25px;
+    border-radius: 14px;
+    color:darkgreen;
+    margin-right: 15%;
+}
+#botao:hover{
+    border:none;
+    background:rgb(86, 204, 82) ;
+    color:honeydew
+}
+.header{
+    padding-top: 100px;
+    display:flex;
+    flex-flow:row wrap;
+    background:rgb(175, 170, 170);
+}
+.headline{
+    text-align: center;
+    font-family:'comfortaa';
+    margin-left:0%;
+    border:0px solid black;
+    color:rgb(85, 4, 161)
+}    
+.img-headline{
+    display:flex;
+   border:0px solid white;
+    text-align: center;
+}
+.frame{
+    text-align: center;
+    background-color: rgb(175, 170, 170);
+}
+.hi{
+    background-color: rgb(175, 170, 170);
+    text-align: center;
+    font-family:'comfortaa';
+    display: inline-block;
+    font-size: 50px;
+    color:rgb(85, 4, 161);
+}
+.card{
+
+    border: 2px solid  rgb(85, 4, 161);
+    background-color: rgb(175, 170, 170);
+    display: inline-block;
+    margin:5%;
+    width:25%;
+    margin:1%;
+    padding:20px;
+    font-size:15px;
+    color:  rgb(85, 4, 161);
+    border-radius: 40px;
+    cursor:pointer;
+}
+.card:hover{
+    background-color: rgb(85, 4, 161);
+    color:whitesmoke;
+    font-size: 25px;
+}
+.card:hover img{
+    display:none;
+}
+.card:hover h3{
+    font-size: 40px;
+}
+.card h3{
+    font-size: 30px;
+}
+.hey{
+    font-family: 'comfortaa';
+    text-align: center;
+    background-color: rgb(85, 4, 161);
+    color: whitesmoke;
+    height:250px;
+}
+.whats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 4%;
+}
+@media only screen and (max-widith:900px){
+    .menu{
+        display: none;
+    }
+    .navbar{
+        position: relative;
+    }
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+}
